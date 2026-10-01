@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Healing Infrastructure</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 24px 8%;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        .container {
+            width: 84%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .hero {
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            margin-bottom: 25px;
+        }
+
+        .hero h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 14px;
+            border-radius: 20px;
+            background: #dcfce7;
+            color: #166534;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 45px;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Auto-Healing Infrastructure</h1>
+        <p>Production-style Cloud DevOps project</p>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>Infrastructure Status</h2>
+            <p>
+                This server is running as part of an automated,
+                monitored and self-recovering infrastructure system.
+            </p>
+
+            <span class="status">● System Operational</span>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>EC2 Server</h3>
+                <p>
+                    Compute infrastructure hosting the application
+                    and Nginx web server.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Monitoring</h3>
+                <p>
+                    CloudWatch monitors infrastructure health and
+                    detects abnormal conditions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Auto Recovery</h3>
+                <p>
+                    Automated recovery mechanisms can restart the
+                    server when a failure condition is detected.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Auto-Healing Infrastructure • Cloud DevOps Portfolio Project
+    </footer>
+
+</body>
+</html>
